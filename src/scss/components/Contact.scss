@@ -1,0 +1,99 @@
+@use "../partials/" as *;
+
+.Contact {
+  @include flex(column, nowrap, center, center);
+  margin: $sm-spacing 0 0;
+
+  .Wrapper {
+    padding: 1.875rem 3.125rem;
+    font-size: 0.9375rem;
+
+    @include tablet {
+      @include flex(row, nowrap, center, center);
+    }
+  }
+
+  &-h4 {
+    color: $text-color;
+    padding: 0 0 0.625rem;
+    font-weight: 600;
+  }
+
+  &-p {
+    margin: 0 0 $sm-spacing;
+    color: $secondary-text-color;
+  }
+
+  &-info {
+    @include flex(row, nowrap, flex-start, center);
+  }
+
+  &-i {
+    @include flex(row, nowrap, flex-start, center);
+    width: $spacing;
+  }
+
+  &-icon {
+    color: $h1-color;
+    font-size: 1.75rem;
+
+    
+  }
+
+  &-text {
+    border-left: 0.0625rem solid $grey;
+    padding: 0.75rem 0 0.75rem $sm-spacing;
+  }
+
+  &-span {
+    color: $secondary-text-color;
+  }
+
+  &-h6 {
+    color: $text-color;
+    font-weight: 600;
+  }
+
+  .Social {
+    display: none;
+    position: relative;
+    @include mobile {
+      display: inline;
+      &::before,
+      &::after {
+        background-color: $grey;
+        content: "";
+        height: 0.125rem;
+        width: $sm-spacing;
+        display: inline-block;
+        margin-bottom: 0.3125rem;
+        margin-right: 0.625rem;
+      }
+    }
+
+    &-icon {
+      @include mobile {
+        font-size: 1.375rem;
+        padding: 0.625rem;
+        display: inline;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          color: $h1-color;
+        }
+      }
+    }
+  }
+
+  .email {
+    color: $h1-color;
+    text-decoration: underline;
+  }
+
+  &-container {
+    margin: 0;
+
+    @include tablet {
+      margin: 0 0 3.125rem 3.125rem;
+    }
+  }
+}

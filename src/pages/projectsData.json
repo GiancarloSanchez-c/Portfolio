@@ -1,0 +1,64 @@
+[
+  {
+    "title": "Free Meal Api",
+    "image": "./projectImages/food.png",
+    "description": "This is a project that I made with the React Redux Toolkit technologies and use the Free Meal API, in order to obtain the recipes, categories of each recipe and ingredients. You can also get the recipes by filtering categories.",
+    "technologies": "REACT | Redux-Toolkit | HTML | SCSS ",
+    "github": "https://github.com/GiancarloSanchez-c/Food-Meal-Api",
+    "deployed": "https://meal-api-ashen.vercel.app/",
+    "bgcolor": "#f37737",
+    "id": "1"
+  },
+  {
+    "title": "Movies",
+    "image": "./projectImages/movies.png",
+    "technologies": "React | HTML | SCSS ",
+    "description": " This is a movie project using the TMDB api. You can get all the movies obtained from the Api, you can see the movies related to the selected movie You can get series. You can get recommended movies and series.",
+    "github": "https://github.com/GiancarloSanchez-c/Movies-TMDB",
+    "deployed": "https://movies-tmdb-plum.vercel.app/",
+    "bgcolor": "#29cbe0",
+    "id": "2"
+  },
+  {
+    "title": "Tesla",
+    "image": "./projectImages/Tesla.png",
+    "technologies": "REACT | HTML | SCSS ",
+    "description": "This project is a copycat of the landing page of the Tesla website.",
+    "github": "https://github.com/GiancarloSanchez-c/Tesla-landing",
+    "deployed": "https://tesla-landing-ruddy.vercel.app/",
+    "bgcolor": "#6c4bf4",
+    "id": "3"
+  },
+  {
+    "title": "Drinks",
+    "image": "./projectImages/drinks.png",
+    "technologies": "REACT | HTML | CSS",
+    "github": "https://github.com/GiancarloSanchez-c/cocktail-db",
+    "description": "This is a drinks project using the Cocktail DB API. You can get all drinks from the api. You can filter by categories, glasses, by alcoholic and non-alcoholic and by ingredients. You can search by drink name, by ingredient or by glasses.",
+    "deployed": "https://cocktail-db-eight.vercel.app/",
+    "bgcolor": "#f85781",
+    "id": "4"
+  },
+
+  {
+    "title": "Gift App",
+    "image": "./projectImages/gift.png",
+    "description": "This is a project where you can look for fun gifts..",
+    "technologies": "React | HTML | CSS",
+    "github": "https://github.com/GiancarloSanchez-c/gift-app",
+    "deployed": "https://gift-app-sigma.vercel.app/",
+    "bgcolor": "#ffcc33",
+    "id": "1"
+  },
+
+  {
+    "title": "Weather",
+    "image": "./projectImages/weather.png",
+    "technologies": "REACT | HTML | CSS",
+    "description": "This is a project where you can look up the temperatures and climates of cities around the world.",
+    "github": "https://github.com/GiancarloSanchez-c/weather-api",
+    "deployed": "https://weather-seven-wheat.vercel.app/",
+    "bgcolor": "#3e67ff",
+    "id": "6"
+  }
+]

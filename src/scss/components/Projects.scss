@@ -1,0 +1,114 @@
+@use "../partials/" as *;
+
+.Portfolio {
+  @include flex(column, nowrap, center, center);
+
+  .Wrapper {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    padding: 0 1.5625rem;
+
+    @include tablet {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      gap: 0.625rem;
+      max-width: 94rem;
+    }
+  }
+
+  &-card {
+    @include flex(column, nowrap, center, center);
+    color: $white;
+    border-radius: 0.1875rem;
+    margin-bottom: 1.25rem;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    flex-direction: column;
+    cursor: pointer;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      opacity: 0.3;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    @include mobile {
+      @include flex(row, wrap, center, center);
+
+      height: 21.875rem;
+    }
+
+  }
+
+  &-text {
+    @include flex(column, nowrap, center, center);
+    gap: 0.625rem;
+    margin: 3rem 0;
+  }
+
+  &-tech {
+    font-size: 0.75rem;
+    white-space: nowrap;
+    font-style: italic;
+  }
+
+  &-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $text-color;
+  }
+
+  &-img {
+    @include flex(row, nowrap, center, center);
+    @include tablet {
+      transform: translateX(30%);
+      transition: all 0.3s ease-in-out;
+    }
+    img {
+      height: 12rem;
+      margin: 1.5625rem 0 0;
+      transition: all 1.3s ease-in-out;
+    }
+  }
+
+  &-description {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  &-button {
+    padding: 0.625rem 1.25rem;
+    background-color: $h1-color;
+    width: 100%;
+    border-radius: 1.25rem;
+    color: $white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all .4s ease-in-out;
+    &:hover {
+      color: $h1-color;
+      background-color: $white;
+    }
+
+  }
+
+  &-close {
+    width: 1.25rem;
+    margin-left: 15.625rem;
+    transform: rotate(180deg);
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    &:hover {
+      filter: brightness(100);
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@use "../partials/" as *;
+
+.Header {
+  width: 100%;
+
+  .Wrapper {
+    @include flex(row, nowrap, space-between, center);
+
+    padding: $sm-spacing $spacing;
+    color: $text-color;
+    max-width: 100%;
+  }
+
+  &-img {
+    max-width: 4rem;
+    background-color: $white;
+    border-radius: 50%;
+  }
+
+  &-nav {
+    display: none;
+    position: absolute;
+    top: 5.8125rem;
+    right: 0;
+    background-color: $bg-color;
+    width: 100%;
+    padding: 0.625rem;
+    z-index: 3;
+
+
+    @include tablet {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 3.125rem;
+      background-color: $bg-color;
+      position: relative;
+      top: auto;
+      width: 0;
+      left: 0;
+      padding: 0 0.625rem;
+    }
+
+    &.open {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: slideDown 0.5s ease-in-out forwards;
+    }
+
+    
+  }
+
+  &-a {
+    color: $text-color;
+    font-size: 0.9375rem;
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem 0;
+    position: relative;
+    transition: all .4s ease-in-out;
+
+    &:hover {
+      color: $h1-color;
+    }
+  }
+
+  &-button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+
+    @include tablet {
+      display: none;
+    }
+
+  }
+
+  &-open,
+  &-close {
+    height: 1.25rem;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  &-close {
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+}
+
+

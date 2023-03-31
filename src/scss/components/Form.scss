@@ -1,0 +1,56 @@
+@use "../partials/" as *;
+
+.Form {
+  font-size: 1rem;
+  margin: 0 0 $sm-spacing;
+
+  &-h4 {
+    color: $text-color;
+    font-weight: 600;
+    margin: 0 0 0.625rem;
+  }
+
+  &-group {
+    width: 100%;
+  }
+
+
+  &
+
+  &-input {
+    width: 100%;
+    padding: 0.725rem 0.725rem;
+    border: none;
+    background-color: #161616;
+    margin-bottom: 1.25rem;
+    border-bottom: 0.0625rem solid $grey;
+    border-radius: 0.0625rem;
+    outline: transparent;
+    color: $grey;
+
+    &::placeholder {
+      color: $grey;
+      font-size: 0.875rem;
+    }
+  }
+
+  &-inputs {
+    display: flex;
+    flex-flow:row wrap;
+
+    @include mobile {
+      flex-wrap: nowrap;
+      gap: 1.9rem;
+    }
+
+  }
+
+  &-button {
+    background-color: $h1-color;
+    padding:0.5rem 1.5625rem;
+    border-radius: 2.5rem;
+    font-size: 0.9375rem;
+    cursor: pointer;
+  }
+
+}
