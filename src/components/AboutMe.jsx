@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { SocialIcons } from "./SocialIcons";
 import about from "../assets/img/profile.jpg";
-import Cv from "../assets/CV.pdf";
+import Cv from "../assets/CurriculumVitae.pdf";
 
 export const AboutMe = ({ name, email,location, availability, brand }) => {
   
